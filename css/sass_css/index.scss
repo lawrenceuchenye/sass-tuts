@@ -1,0 +1,14 @@
+$primary-color: #ef4444;
+$fontsize: 28px;
+$text-color: #fff;
+$font-weight: (
+  "big": 800,
+  "medium": 400,
+  "mini": 200,
+);
+
+body {
+  background-color: $primary-color;
+  font-size: $fontsize;
+  font-weight: map-get($font-weight, medium);
+}
