@@ -1,6 +1,12 @@
 body {
   background-color: #ef4444;
   font-size: 28px;
-  font-weight: 400; }
+  font-weight: 400;
+}
+body h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px;
+}
 
 /*# sourceMappingURL=index.css.map */

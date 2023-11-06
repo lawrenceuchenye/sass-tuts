@@ -11,4 +11,10 @@ body {
   background-color: $primary-color;
   font-size: $fontsize;
   font-weight: map-get($font-weight, medium);
+
+  h1 {
+    color: $text-color;
+    text-transform: uppercase;
+    margin: 10px;
+  }
 }
