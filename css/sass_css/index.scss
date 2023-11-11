@@ -17,10 +17,25 @@ body {
   }
 }
 
+@mixin colorBlack($isLight: true) {
+  @if $isLight {
+    color: #fff;
+    background: darken($bg-color, 10);
+  }
+}
+
 .main-container {
-  background: #0d81ea;
+  background: $bg-color;
   color: $text-color;
   &:hover {
     color: $primary-color;
+  }
+
+  @include colorBlack($isLight: false);
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
   }
 }
